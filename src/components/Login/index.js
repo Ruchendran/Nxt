@@ -1,6 +1,6 @@
 import {Component} from 'react'
 
-import {Cookies} from 'js-cookie'
+import Cookies from 'js-cookie'
 
 import './index.css'
 
@@ -31,8 +31,6 @@ class Login extends Component {
   }
 
   failure = status => {
-    console.log('hit')
-
     this.setState({
       error: "*Username and password didn't match ",
     })
@@ -58,6 +56,8 @@ class Login extends Component {
     const jsonData = await fetApi.json()
 
     if (fetApi.ok === true) {
+      console.log('hit')
+
       Cookies.set('token', jsonData.jwt_token, {expires: 30})
     } else {
       this.failure(jsonData)
