@@ -1,0 +1,72 @@
+.login-main {
+  width: 100vw;
+
+  justify-content: center;
+
+  align-items: center;
+
+  height: 100vh;
+
+  display: flex;
+}
+
+.login-form {
+  width: 30vw;
+
+  height: 65vh;
+
+  box-shadow: -5px -5px 25px 25px grey;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  display: flex;
+}
+
+.inpu-main {
+  width: 25vw;
+
+  height: 35vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  flex-direction: column;
+}
+
+.login-img {
+  width: 200px;
+
+  height: 40px;
+}
+
+.show-main {
+  width: 25vw;
+
+  height: 5vh;
+
+  display: flex;
+
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.inpu {
+  width: 25vw;
+  height: 40px;
+}
+
+.log {
+  width: 25vw;
+  color: #ffffff;
+
+  background-color: #4f46e5;
+
+  height: 40px;
+
+  border-style: none;
+}
